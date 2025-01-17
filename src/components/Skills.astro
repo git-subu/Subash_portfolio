@@ -1,0 +1,84 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		
+		<p>Vue JS</p>
+		
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		
+		<p>Node JS</p>
+		
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		
+		<p>MySQL</p>
+		
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		
+		<p>Tailwind</p>
+		
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		
+		<p>BootStrap</p>
+		
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		
+		<p>Java</p>
+		
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		
+		<p>Spring</p>
+		
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills p {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(black);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			gap: 2rem;
+		}
+
+		.skills p {
+			font-size: var(--text-xl);
+			font-weight: 600;
+			font-family: var(--font-brand);
+		}
+	}
+</style>

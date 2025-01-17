@@ -1,0 +1,123 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Subash" description="About Subash">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About"
+				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+			>
+			</Hero>
+
+			<section>
+				<h2 class="section-title">Experience</h2>
+				
+				<div class="content">
+					<p style="font-weight: bold;">Enterprise Softlabs (<a target="_blank" href="https://esoft-labs.com/">https://esoft-labs.com/</a>)</p>
+					<br>
+					<p>
+						As a software Developer at EsoftLabs, I have honed my skills in frontend development particularly in React libraries, Bootstrap CSS, Node JS framework and SQL Server Database.
+ Being collaborated with the delivery management team and client people, I have successfully hand-overed the first frontend project for Korber Warehouse Management Supply chain. 
+					</p>
+					<br>
+					<p>
+						Performed code reviews and mentored junior developers, promoting best
+ practices in ReactJS development and its core principles. Build a scalable user interface for Korber warehouse management
+ utilizing reactjs, react router, redux, typescript and nodejs
+					</p>
+					<br>
+					<p style="font-weight: bold;">Mantra technologies (<a target="_blank" href="https://mantragroup.com/">https://mantragroup.com/</a>)</p>
+					<br>
+					<p>
+						As a seasoned Software Engineer with two years of experience, I have demonstrated exceptional proficiency in a diverse array
+						 of technologies including HTML, TailwindCSS, Javascript, VueJS, Node.js, Astro and Typescript. My expertise has been pivotal in
+						  leading a team of 2-4 individuals, effectively steering projects such as Sign.cc, Ninjachat, Support.cc, and Ninjacapture to success.
+					</p>
+					<br>
+					<p>
+						Proactively worked on Support.cc under Infinity 500apps suite, enhancing the user interface, bugs fixes, 
+						being a part of production support with the help of HTML5, Bootstrap CSS, Vue JS framework, NPM webpack.
+					</p>
+				
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Education</h2>
+				<div class="content">
+					<p>B.Tech, Electrical and Electronics Engg</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<p>VueJs, JavaScript, TailwindCSS, Typescript, NodeJS, MySQL</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
