@@ -7,7 +7,7 @@ img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
 description: |
   Developed a customised website for property investment,
   Provided the strategies behind the real estate process and services
-link: https://test.skyhost.co.in/
+link: https://www.jagpropertyadvisory.com.au/
 tags:
   - HTML Template
   - Bootstrap CSS
